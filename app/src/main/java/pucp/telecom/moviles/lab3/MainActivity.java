@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import pucp.telecom.moviles.lab3.Fragments.DialogFragmentEjemplo;
+import pucp.telecom.moviles.lab3.Fragments.FragmentoLocal;
+import pucp.telecom.moviles.lab3.Fragments.FragmentoRemoto;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void guardarLocalBtn(View view){
-        DialogFragmentEjemplo dialogFragmentEjemplo = new DialogFragmentEjemplo();
-        dialogFragmentEjemplo.show(getSupportFragmentManager(),"dialog fragment local");
+        FragmentoLocal fragmentoLocal = new FragmentoLocal();
+        fragmentoLocal.show(getSupportFragmentManager(),"dialog fragment local");
     }
 
     public void guardarRemotoBtn(View view){
-        DialogFragmentEjemplo dialogFragmentEjemplo = new DialogFragmentEjemplo();
-        dialogFragmentEjemplo.show(getSupportFragmentManager(),"dialog fragment remoto");
+        FragmentoRemoto fragmentoRemoto = new FragmentoRemoto();
+        fragmentoRemoto.show(getSupportFragmentManager(),"dialog fragment remoto");
 
     }
 
