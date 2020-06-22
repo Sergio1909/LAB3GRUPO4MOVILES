@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     MediaRecorder recorder;
 
-    public void iniciarGrabacion() throws IOException
+    public void iniciarGrabacion(View view) throws IOException
     {
         SimpleDateFormat timeStampFormat = new SimpleDateFormat(
                 "yyyy-MM-dd-HH.mm.ss");
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         recorder.start();
     }
 
-    protected void detenerGrabacion() {
+    public void detenerGrabacion(View view) {
         recorder.stop();
         recorder.release();
     }
